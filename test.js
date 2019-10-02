@@ -36,7 +36,7 @@ if (age >= 18 && age <=30){
 } else {
     document.write("   You aint coming!");
 }
-*/
+
 
 var age = 5;
 
@@ -45,3 +45,12 @@ while (age < 10) {
     age++;
 }
 document.write("You are now over 10");
+*/
+
+var links = document.getElementsByTagName("a");
+for (i = 1; i <= links.length ; i++) {
+
+    console.log("this is a link number" + i);
+
+}
+document.write("all links now looped");
