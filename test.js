@@ -60,7 +60,7 @@ for (i = 1; i <= links.length ; i++) {
 }
 document.write("all links now looped");
 
-*/
+
 
 for ( i = 0; i < 10; i++ ){
     if (i===5 || i===3){
@@ -71,3 +71,12 @@ for ( i = 0; i < 10; i++ ){
         break;
     }
 } console.log("I have broken out of the loop");
+
+*/
+
+var links = document.getElementsByTagName("a");
+
+for(i = 0; i < links.length; i++){
+
+    links[i].className = "link-" + i;
+}
