@@ -72,11 +72,24 @@ for ( i = 0; i < 10; i++ ){
     }
 } console.log("I have broken out of the loop");
 
-*/
+
 
 var links = document.getElementsByTagName("a");
 
 for(i = 0; i < links.length; i++){
 
     links[i].className = "link-" + i;
+}
+
+*/
+
+var a = 2;
+var b = 5;
+
+if (isNaN(a)){
+
+    console.log("that isn't a number");
+
+} else{
+    console.log("meaning of life is " + (a + b));
 }
