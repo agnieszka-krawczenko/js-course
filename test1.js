@@ -1,15 +1,24 @@
-var content = document.getElementById("content");
-var button = document.getElementById("show-more");
+function setUpEvents(){
 
-button.onclick = function(){
+    var content = document.getElementById("content");
+    var button = document.getElementById("show-more");
 
-    if(content.className == "open"){
+    button.onclick = function(){
 
-        content.className = "";
-        button.innerHTML = "Show More"
-    } else{
+        if(content.className == "open"){
 
-        content.className = "open";
-        button.innerHTML = "Show less";
-    }
+            content.className = "";
+            button.innerHTML = "Show More"
+        } else{
+
+            content.className = "open";
+            button.innerHTML = "Show less";
+        }
+    };
+
+}
+
+window.onload = function(){
+
+    setUpEvents();
 };
