@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Form</title>
+    <link href="form.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    
+    <form id="my-form" name="myForm" action="#">
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br/>
+        <label>Hobbies:</label><br />
+        <input type="checkbox" name="biking" value="biking">Biking<br />
+        <input type="checkbox" name="skiing" value="skiing">Skiing<br />
+        <input type="checkbox" name="driving" value="driving">Driving<br />
+        <label for="colour">Fav colour:</label>
+        <select name="colour">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+        </select>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <div id="message" style="color: red;"></div>
+    
+    <script src="form.js">
+    </script>
+</body>
+</html>
